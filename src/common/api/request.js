@@ -34,7 +34,7 @@ const axiosBaseQuery = ({ baseUrl, headers } = { baseUrl: '', headers: {} }) =>
   async ({ url, method, data, params }) => {
     try {
       const result = await axios({ 
-        url: url,
+        url,
         baseURL: baseUrl, 
         method, 
         data, 
